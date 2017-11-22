@@ -1,0 +1,36 @@
+<div class="dialog-header">
+  <h5 class="text-center user-name ng-binding">
+    {{ interlocutor?.name }}
+  </h5>
+  <div class="text-center user-status">
+    <span *ngIf="interlocutor && isInterlocutorOnline" class="badge bg-green">Online</span>
+    <span *ngIf="interlocutor && !isInterlocutorOnline" class="badge bg-red">Offline</span>
+  </div>
+</div>
+
+<div
+  class="dialog-wrapper direct-chat-messages"
+  #scrollContainer
+  [scrollTop]="scrollContainer.scrollHeight"
+  slimScroll width="auto" height="400px" size="7px">
+  <div *ngFor="let message of messages">
+    <message-view
+      class="direct-chat-msg"
+      [ngClass]="{'right' : messageBelongsToCurrentUser(message)}"
+      [message]="message"
+      [me]="messageBelongsToCurrentUser(message)">
+    </message-view>
+  </div>
+</div>
+
+<div class="dialog-footer">
+  <form class="ng-pristine ng-valid">
+    <div class="input-group">
+      <input (keyup.enter)="send()" name="message" placeholder="Type Message ..."
+             class="form-control ng-pristine ng-valid ng-empty ng-touched" [(ngModel)]="message" autocomplete="off">
+      <span class="input-group-btn">
+                    <button type="button" class="btn btn-primary btn-flat" (click)="send()">Send</button>
+                </span>
+    </div>
+  </form>
+</div>

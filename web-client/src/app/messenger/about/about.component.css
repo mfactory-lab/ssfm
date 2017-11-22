@@ -1,0 +1,48 @@
+.header {
+  padding: 5px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  height: 50px;
+  width: 100%;
+  color: #000;
+  background-color: #ddd;
+}
+
+.header > h5 {
+  font-weight: 600;
+}
+
+.info-wrapper {
+  background-color: #ffffff;
+  height: 400px;
+  overflow: auto;
+}
+
+.box {
+  border-top-width: 0;
+  box-shadow: none;
+}
+
+.profile-user-wrapper {
+  margin: -10px -10px 5px;
+  padding: 10px;
+  background-image: url("../../../assets/images/background.png");
+  background-size: cover;
+  color: white;
+}
+
+.profile-user-img {
+  width: 80px;
+}
+
+.head-row {
+  font-size: 16px;
+  border-top-width: 0;
+}
+
+.footer {
+  white-space: nowrap;
+  padding: 15px;
+  background-color: #eeeeee;
+  z-index: 1000;
+}

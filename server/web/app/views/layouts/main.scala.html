@@ -1,0 +1,64 @@
+@import play.api.Environment
+@import sequrity.Auth0ConfigKeys
+
+@(content: Html)(implicit requireJS: org.webjars.play.RequireJS,
+        webJarAssets: WebJarAssets,
+        environment: Environment,
+        info: Map[String, String],
+        authConfig: Auth0ConfigKeys)
+
+<!DOCTYPE html><!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]--><!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]--><!--[if !IE]><!-->
+<html lang="en">
+        <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>@info.getOrElse("projectName", "")</title>
+        <meta name="description" content="">
+        <meta name="author" content=title>
+
+            <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.ico")">
+
+        <link rel="stylesheet" href="@routes.Assets.versioned("lib/bootstrap/css/bootstrap.min.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/new.css")">
+
+        <script type="text/javascript">
+            @if(environment.mode == play.api.Mode.Prod || environment.mode == play.api.Mode.Test) {
+                window.isProduction = true;
+            } else {
+                window.isProduction = false;
+            }
+        </script>
+
+    </head>
+
+    <body>
+
+        @content
+
+
+
+    <footer data-ng-cloak class="footer navbar navbar-fixed-bottom navbar-light bg-faded">
+        <div class="container">
+            <p class="text-muted">
+                <strong>
+                    <a href="https://github.com/AlexanderRay/ssfm/">
+                        simple small fancy messenger (@info.getOrElse("version", "-")).
+                    </a>
+                </strong>
+                <strong>
+                    Copyright © 2017, <a href = "mailto:dev@@alexray.me">Alexander Ray</a>
+                </strong>
+            </p>
+        </div>
+    </footer>
+
+    </body>
+
+</html>

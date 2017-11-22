@@ -1,0 +1,12 @@
+<div class="sidebar-header">
+  <h5 class="text-center">Dialogs</h5>
+</div>
+
+<div class="sidebar-list-wrapper direct-chat-contacts" slimScroll width="auto" height="400px" size="7px">
+  <ul class="contacts-list">
+    <li *ngFor="let dialog of dialogs" [ngClass]="{'active': dialog.dialogReference===selected}"
+        (click)="select(dialog.dialogReference)">
+      <dialog-view [dialog]="dialog"></dialog-view>
+    </li>
+  </ul>
+</div>

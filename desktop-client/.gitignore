@@ -1,0 +1,5 @@
+/node_modules/
+/src/app/scalajs/
+/dist/
+/app-dist/
+/desktop-scalaJS/target/

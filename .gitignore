@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+/ssfm.iml
+/.idea/
+/target/
+/project/target/
+desktop-scalaJS/target/
+mobile-scalaJS/target/
+/project/project/target/

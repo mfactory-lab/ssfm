@@ -1,0 +1,9 @@
+/test
+/RUNNING_PID
+/project/*-shim.sbt
+web/logs/
+project/project/
+target/
+.idea/
+/server-sharedJS/.js/
+/server-sharedJS/.jvm/

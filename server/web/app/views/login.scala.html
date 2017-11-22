@@ -1,0 +1,35 @@
+@import play.api.Environment
+@import sequrity.Auth0ConfigKeys
+
+@()(implicit requireJS: org.webjars.play.RequireJS,
+        webJarAssets: WebJarAssets,
+        environment: Environment,
+        info: Map[String, String],
+        authConfig: Auth0ConfigKeys)
+
+@layouts.main {
+    <script src='@routes.Assets.versioned("lib/jquery/jquery.js")'></script>
+
+    <div id="auth-root"></div>
+
+    <script src="https://cdn.auth0.com/js/lock/10.12.1/lock.min.js"></script>
+
+    <script>
+            var AUTH0_CLIENT_ID =       '@authConfig.clientId';
+            var AUTH0_DOMAIN =          '@authConfig.domain';
+            var AUTH0_CALLBACK_URL =    '@authConfig.redirectURI';
+    </script>
+
+    <script type="text/javascript">
+            $(function () {
+                var lock = new Auth0Lock(AUTH0_CLIENT_ID, AUTH0_DOMAIN, {
+                    container: 'auth-root',
+                    auth: {
+                        redirectUrl: AUTH0_CALLBACK_URL
+                    }
+                });
+                lock.show();
+            });
+
+    </script>
+}

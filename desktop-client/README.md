@@ -1,0 +1,2 @@
+- `ng serve`
+- `electron .`

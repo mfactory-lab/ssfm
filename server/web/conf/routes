@@ -1,0 +1,23 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# JavaScript routes object
+GET        /jsroutes.js           controllers.JsRoutesController.jsRoutes()
+
+# Application controller
+GET        /login                 controllers.Application.login
+GET        /                      controllers.Application.messenger
+GET        /backdoor              controllers.Application.backdoor
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file          controllers.Assets.versioned(path="/public", file: Asset)
+GET        /webjars/*file         controllers.WebJarAssets.at(file)
+
+# API
+GET        /api/ws/chat           controllers.chat.ChatController.chatSocket
+
+# Auth0 controller
+GET        /callback              controllers.auth0.AuthController.callback(code: Option[String])
+GET        /auth0logout           controllers.auth0.AuthController.auth0logout
+GET        /logoutCallback        controllers.auth0.AuthController.logoutCallback

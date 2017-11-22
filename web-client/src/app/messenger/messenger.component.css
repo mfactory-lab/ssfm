@@ -1,0 +1,12 @@
+.messenger-wrapper {
+  margin-top: 50px;
+}
+
+.sidebar-wrapper {
+  padding-right: 0 !important;
+  border-right: 1px solid #dadada;
+}
+
+.direct-chat, .about-wrapper {
+  padding-left: 0 !important;
+}

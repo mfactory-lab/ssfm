@@ -1,0 +1,12 @@
+<div class="sidebar-header">
+  <h5 class="text-center">Contacts</h5>
+</div>
+
+<div class="sidebar-list-wrapper direct-chat-contacts" slimScroll width="auto" height="400px" size="7px">
+  <ul class="contacts-list">
+    <li *ngFor="let contact of contacts" [ngClass]="{'active': contact.contactReference===selected}"
+        (click)="select(contact.contactReference)">
+      <contact-view [contact]="contact"></contact-view>
+    </li>
+  </ul>
+</div>

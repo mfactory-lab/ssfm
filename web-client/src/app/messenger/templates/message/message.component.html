@@ -1,0 +1,9 @@
+<div class="direct-chat-info clearfix">
+  <span class="direct-chat-name" [ngClass]="{'pull-right': me, 'pull-left': !me}">{{message.contactName}}</span>
+  <span class="direct-chat-timestamp" [ngClass]="{'pull-right': !me, 'pull-left': me}">{{trimDate(message.date)}}</span>
+</div>
+<i class="direct-chat-img fa fa-user-circle" *ngIf="!message.contactAvatar" aria-hidden="true" alt="Contact Avatar"></i>
+<img class="direct-chat-img" *ngIf="message.contactAvatar" [src]="message.contactAvatar" alt="Message User Image">
+<div class="direct-chat-text">
+  {{message.message}}
+</div>

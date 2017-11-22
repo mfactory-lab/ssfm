@@ -1,0 +1,10 @@
+<i class="contacts-list-img fa fa-user-circle" *ngIf="!contact.avatar" aria-hidden="true" alt="Contact Avatar"></i>
+<img class="contacts-list-img" *ngIf="contact.avatar" [src]="contact.avatar" alt="User Image">
+
+<div class="contacts-list-info">
+      <span class="contacts-list-name">
+        {{contact.name}}
+        <small class="contacts-list-date pull-right hidden-xs">{{trimDate(contact.lastMessageDate)}}</small>
+      </span>
+  <span class="contacts-list-msg">{{contact.lastMessage}}</span>
+</div>

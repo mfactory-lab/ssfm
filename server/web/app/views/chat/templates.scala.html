@@ -1,0 +1,44 @@
+@()
+
+<script type="text/ng-template" id="users-list-template.html">
+<li data-ng-repeat="user in users track by user.userReference"
+    ng-click="select(user.userReference)" ng-class="{active: user.userReference===selected}">
+    <i class="contacts-list-img fa fa-user-circle" aria-hidden="true" alt="Contact Avatar" data-ng-show="!user.avatar"></i>
+    <img class="contacts-list-img" aria-hidden="true" ng-src={{user.avatar}} alt="Contact Avatar" data-ng-show="user.avatar"></img>
+    <div class="contacts-list-info">
+        <span class="contacts-list-name">
+        {{user.name}}
+        <small class="contacts-list-date pull-right">{{user.date}}</small>
+        </span>
+        <span class="contacts-list-msg">{{user.lastMessage}}</span>
+    </div><!-- /.contacts-list-info -->
+</li><!-- End Contact Item -->
+</script>
+
+<script type="text/ng-template" id="dialogs-template.html">
+    <li ng-repeat="dialog in dialogs track by dialog.dialogReference"
+    ng-click="selectDialog(dialog.dialogReference)" ng-class="{active: dialog.dialogReference===selectedDialog}">
+        <i class="contacts-list-img fa fa-user-circle" aria-hidden="true" alt="Contact Avatar" data-ng-show="!dialog.avatar"></i>
+        <img class="contacts-list-img" aria-hidden="true" ng-src={{dialog.avatar}} alt="Contact Avatar" data-ng-show="dialog.avatar"></img>
+        <div class="contacts-list-info">
+            <span class="contacts-list-name">
+            {{dialog.name}}
+            <small class="contacts-list-date pull-right">{{dialog.date}}</small>
+            </span>
+        <span class="contacts-list-msg">{{dialog.message}}</span>
+        </div><!-- /.contacts-list-info -->
+    </li><!-- End Contact Item -->
+</script>
+
+<script type="text/ng-template" id="settings-template.html">
+    <li ng-repeat="setting in settings track by setting.ref"
+    ng-click="select(setting)">
+        <i class="contacts-list-img fa fa-cog" aria-hidden="true"></i>
+        <div class="contacts-list-info">
+            <span class="contacts-list-name">
+            {{setting.name}}
+            </span>
+        <span class="contacts-list-msg">{{setting.description}}</span>
+        </div><!-- /.contacts-list-info -->
+    </li>
+</script>

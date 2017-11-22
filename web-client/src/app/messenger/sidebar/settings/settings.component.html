@@ -1,0 +1,12 @@
+<div class="sidebar-header">
+  <h5 class="text-center">Settings</h5>
+</div>
+
+<div class="sidebar-list-wrapper" slimScroll width="auto" height="400px" size="7px">
+  <ul class="contacts-list">
+    <li *ngFor="let setting of settings" [ngClass]="{'active': setting.id===selected}"
+        (click)="select(setting.id)">
+      <setting-item [setting]="setting"></setting-item>
+    </li>
+  </ul>
+</div>

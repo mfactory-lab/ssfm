@@ -1,0 +1,63 @@
+@import play.api.Environment
+@import sequrity.Auth0ConfigKeys
+@import play.api.libs.json.JsValue
+
+@(profile: JsValue)(implicit requireJS: org.webjars.play.RequireJS,
+        webJarAssets: WebJarAssets,
+        environment: Environment,
+        info: Map[String, String],
+        authConfig: Auth0ConfigKeys)
+
+@layouts.main {
+    @views.html.chat.templates()
+
+    @Html(requireJS.setup(routes.Assets.versioned("javascripts/main.js")))
+
+
+    <div data-ng-controller="LoginController"
+        data-ng-init='name="@((profile \ "name").as[String])"; avatarUrl="@((profile \ "picture").as[String])"; login()'>
+        @*
+        <img class="avatar" src='@((profile \ "picture").as[String])'/>
+        <p style="color: white; text-align: center">Welcome @((profile \ "name").as[String])</p>
+        *@
+    </div>
+
+    <div data-ng-controller="MessengerController">
+
+        <span class="uiWidgetSpinner" data-ng-show="!userLogged">
+            <i class="fa fa-refresh fa-spin"></i>
+        </span>
+
+        <div class="row chat-wrapper" id="chat-root" data-ng-cloak>
+
+            <div class="col-md-2 col-sm-1 col-xs-0"></div>
+
+            <div class="col-md-8 col-sm-10 col-xs-12">
+                <div class="box box-primary box-solid direct-chat direct-chat-primary">
+
+                    <div class="box-header text-center">
+                        <h3 class="box-title">simple small fancy messenger ({{currentUserName}})</h3>
+                    </div>
+
+                    <div class="box-body no-padding">
+                        <div class="row">
+                            <div class="chat-left-panel col-lg-4 col-md-12 col-sm-12 col-xs-12" tab-focus tabindex="0">
+                                @views.html.chat.sidebar()
+                            </div>
+                            <div class="chat-right-panel col-lg-8 col-sm-12 col-sm-12 col-xs-12" tab-focus tabindex="1">
+                                @views.html.chat.chat()
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <div class="col-md-2 col-sm-1 col-xs-0"></div>
+
+        </div>
+
+    </div>
+}

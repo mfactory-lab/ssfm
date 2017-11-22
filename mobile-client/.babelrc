@@ -1,0 +1,6 @@
+{
+  "presets": ["react-native"],
+  "ignore": [
+    "/app/services/scalaJS/*.*"
+  ]
+}

@@ -1,0 +1,31 @@
+<div class="sidebar-content-wrapper">
+  <div *ngIf="selected===0">
+    <app-contacts></app-contacts>
+  </div>
+
+  <div *ngIf="selected===1">
+    <app-dialogs></app-dialogs>
+  </div>
+
+  <div *ngIf="selected===2">
+    <app-settings></app-settings>
+  </div>
+</div>
+
+<div class="row footer">
+  <div class="col-xs-4">
+    <div class="btn" (click)="select(0)" [ngClass]="{'btn-active': selected===0}">
+      <i class="fa fa-users"></i>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="btn" (click)="select(1)" [ngClass]="{'btn-active': selected===1}">
+      <i class="fa fa-comments"></i>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="btn" (click)="select(2)" [ngClass]="{'btn-active': selected===2}">
+      <i class="fa fa-cogs"></i>
+    </div>
+  </div>
+</div>

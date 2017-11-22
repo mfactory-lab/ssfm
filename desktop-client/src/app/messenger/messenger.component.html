@@ -1,0 +1,25 @@
+<div class="row messenger-wrapper" *ngIf="!user">
+  <i class="fa fa-spinner fa-pulse fa-5x fa-fw margin-bottom loader"></i>
+</div>
+
+<div class="row" *ngIf="user">
+
+  <div class="col-xs-12">
+    <div class="no-padding">
+      <div class="row">
+        <div class="col-xs-5 col-sm-4 sidebar-wrapper">
+          <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-xs-7 col-sm-8 direct-chat direct-chat-primary" *ngIf="!showAbout">
+          <app-dialog></app-dialog>
+        </div>
+        <div class="col-xs-7 col-sm-8 about-wrapper" *ngIf="showAbout">
+          <app-about></app-about>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

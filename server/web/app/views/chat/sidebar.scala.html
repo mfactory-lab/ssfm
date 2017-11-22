@@ -1,0 +1,15 @@
+@()
+
+<div ng-if="selected===0">
+    @views.html.chat.users()
+</div>
+
+<div ng-if="selected===1">
+    @views.html.chat.dialogs()
+</div>
+
+<div ng-if="selected===2">
+    @views.html.chat.settings()
+</div>
+
+@views.html.chat.dialogsButtons()

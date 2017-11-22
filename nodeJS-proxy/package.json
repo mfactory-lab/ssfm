@@ -1,0 +1,25 @@
+{
+  "name": "NodeJS-proxy",
+  "version": "0.0.2",
+  "description": "Socket.IO-Websocket proxy server",
+  "main": "/dist/proxyService.js",
+  "dependencies": {
+    "@types/express": "4.0.39",
+    "@types/socket.io": "1.4.31",
+    "@types/ws": "3.2.0",
+    "express": "4.16.2",
+    "socket.io": "2.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "8.0.50",
+    "nodemon": "1.12.1",
+    "ts-node": "3.3.0",
+    "typescript": "2.6.1",
+    "gulp": "3.9.1"
+  },
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ts-node src/proxyService.ts",
+    "build:prod": "tsc && gulp"
+  }
+}

@@ -1,0 +1,4 @@
+/node_modules/
+/src/app/scalajs/
+/dist/
+/web-scalaJS/target/

@@ -1,0 +1,62 @@
+@()
+
+<div data-ng-controller="ChatController">
+
+    <div class="chat-header">
+        <h5 class="text-center user-name">
+            {{dialogName}}
+        </h5>
+        <h6 class="text-center user-status">
+            Online
+        </h6>
+    </div>
+
+    <div class="direct-chat-messages" scroll-bottom="messages">
+
+        <div ng-repeat="message in messages track by $index">
+
+            <div ng-if="!messageBelongsToCurrentUser(message)">
+                <div class="direct-chat-msg">
+                    <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-left">{{message.uname}}</span>
+                        <span class="direct-chat-timestamp pull-right">{{message.date}}</span>
+                    </div><!-- /.direct-chat-info -->
+                    <i class="direct-chat-img fa fa-user-circle" aria-hidden="true" data-ng-show="!message.uavatar"></i>
+                    <img class="direct-chat-img" aria-hidden="true" ng-src={{message.uavatar}} data-ng-show="message.uavatar"></img>
+                    <div class="direct-chat-text">
+                        {{message.message}}
+                    </div>
+                </div>
+            </div>
+
+            <div ng-if="messageBelongsToCurrentUser(message)">
+                <div class="direct-chat-msg right">
+                    <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-right">Me</span>
+                        <span class="direct-chat-timestamp pull-left">{{message.date}}</span>
+                    </div>
+                    <i class="direct-chat-img fa fa-user-circle" aria-hidden="true" data-ng-show="!message.uavatar"></i>
+                    <img class="direct-chat-img" aria-hidden="true" ng-src={{message.uavatar}} data-ng-show="message.uavatar"></img>
+                    <div class="direct-chat-text">
+                        {{message.message}}
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="box-footer-right">
+        <form ng-submit="send()">
+            <div class="input-group">
+                <input type="text" name="message" placeholder="Type Message ..." class="form-control" ng-model="message" autocomplete="off">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-primary btn-flat" ng-click="send()">Send</button>
+                </span>
+            </div>
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,10 @@
+.contacts-list-img {
+  color: #3c8dbc;
+  height: 40px;
+  width: 40px;
+  font-size: 40px;
+}
+
+.contacts-list-info, .contacts-list-date {
+  color: #000;
+}

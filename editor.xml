@@ -3,8 +3,7 @@
     <option name="FONT_SIZE" value="16" />
     <option name="USE_LIGATURES" value="true" />
   </component>
-  <component name="TodoConfiguration">
-    <pattern pattern="\btodo\b.*" />
-    <pattern pattern="\bfixme\b.*" />
+  <component name="EditorSettings">
+    <option name="IS_ENSURE_NEWLINE_AT_EOF" value="true" />
   </component>
 </application>

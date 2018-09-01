@@ -1,1 +1,31 @@
-<code_scheme name="Default" version="173" />
+<code_scheme name="Default" version="173">
+  <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
+  <option name="SOFT_MARGINS" value="120" />
+  <HTMLCodeStyleSettings>
+    <option name="HTML_ALIGN_ATTRIBUTES" value="false" />
+    <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
+    <option name="HTML_NEWLINE_BEFORE_FIRST_ATTRIBUTE" value="When multiline" />
+    <option name="HTML_NEWLINE_AFTER_LAST_ATTRIBUTE" value="When multiline" />
+  </HTMLCodeStyleSettings>
+  <JSCodeStyleSettings>
+    <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
+    <option name="SPACES_WITHIN_IMPORTS" value="true" />
+  </JSCodeStyleSettings>
+  <codeStyleSettings language="HTML">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="2" />
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="TAB_SIZE" value="2" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="JSON">
+    <option name="SPACE_WITHIN_BRACES" value="true" />
+  </codeStyleSettings>
+  <codeStyleSettings language="JavaScript">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="2" />
+      <option name="CONTINUATION_INDENT_SIZE" value="2" />
+      <option name="TAB_SIZE" value="2" />
+    </indentOptions>
+  </codeStyleSettings>
+</code_scheme>

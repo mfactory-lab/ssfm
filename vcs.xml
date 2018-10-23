@@ -18,8 +18,12 @@
           <option name="url" value="https://github.com/dehun/learn-fp.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://budilovskiy@bitbucket.org/astorozhuk/edap.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="C:\Users\maksi\Documents\Learning" />
+    <option name="cloneParentDir" value="C:\Users\maksi\Documents\Work\Git projects" />
   </component>
 </application>

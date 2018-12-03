@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping ext="klib" type="ARCHIVE" />
       <mapping ext="3a" type="PLAIN_TEXT" />
       <mapping ext="macaroon" type="PLAIN_TEXT" />
     </extensionMap>

@@ -1,5 +1,7 @@
 <application>
   <component name="UISettings">
+    <option name="FONT_SCALE" value="1.0" />
+    <option name="FONT_SIZE" value="14" />
     <option name="OVERRIDE_NONIDEA_LAF_FONTS" value="true" />
   </component>
 </application>

@@ -1,7 +1,4 @@
 <application>
-  <component name="ScalaApplicationSettings">
-    <option name="SPECIFY_RETURN_TYPE_EXPLICITLY" value="ADD" />
-  </component>
   <component name="TypeAwareHighlightingApplicationState">
     <option name="SUGGEST_TYPE_AWARE_HIGHLIGHTING_ENABLED" value="true" />
   </component>

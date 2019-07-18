@@ -1,7 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <mapping ext="klib" type="ARCHIVE" />
+      <mapping pattern="2019-07-18" type="PLAIN_TEXT" />
       <mapping pattern=".toDelete" type="PLAIN_TEXT" />
       <mapping ext="3a" type="PLAIN_TEXT" />
       <mapping ext="macaroon" type="PLAIN_TEXT" />

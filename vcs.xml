@@ -34,6 +34,10 @@
           <option name="url" value="https://github.com/afiskon/scala-cassandra-example.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.com:alpha-serve/edap/newdex-peos-bot.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\maksi\Documents\Work\Git projects" />

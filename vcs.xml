@@ -38,6 +38,14 @@
           <option name="url" value="git@gitlab.com:alpha-serve/edap/newdex-peos-bot.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://gitlab.com" />
+          <option name="userName" value="budilovskiy" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://gitlab.com/alpha-serve/edap/newdex-bot.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\maksi\Documents\Work\Git projects" />

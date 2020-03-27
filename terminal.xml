@@ -1,0 +1,5 @@
+<application>
+  <component name="TerminalOptionsProvider">
+    <option name="myShellPath" value="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" />
+  </component>
+</application>

@@ -1,6 +1,8 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping ext="main.kts" type="Kotlin" />
+      <mapping ext="gradle.kts" type="Kotlin" />
       <mapping pattern="in" type="PLAIN_TEXT" />
       <mapping pattern="example" type="PLAIN_TEXT" />
       <mapping pattern="2019-07-18" type="PLAIN_TEXT" />

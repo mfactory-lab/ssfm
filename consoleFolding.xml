@@ -1,0 +1,9 @@
+<application>
+  <component name="ConsoleFoldingSettings">
+    <option name="addedPositive">
+      <list>
+        <option value="2020-04-24T14:55:50.098Z [debug] application.services.ShopifyApiQueueWorker - BUSY: Created child: akka://application/user/31379128455-alpha-serve-test-store.myshopify.com/31379128455-alpha-serve-test-store.myshopify.com_2bda83e1-e596-479e-abd8-4351a6ac11d9. Queue(2bda83e1-e596-479e-abd8-4351a6ac11d9, 2bda83e1-e596-479e-abd8-4351a6ac11d9, 2bda83e1-e596-479e-abd8-4351a6ac11d9, 2bda83e1-e596-479e-abd8-4351a6ac11d9, 2bda83e1-e596-479e-abd8-4351a6ac11d9, 2bda83e1-e596-479e-abd8-4351a6ac11d9, 2bda83e1-e596-479e-abd8-4351a6ac11d9, 2bda83e1-e596-479e-abd8-4351a6ac11d9, 2bda83e1-e596-479e-abd8-4351a6ac11d9, 2bda83e1-e596-479e-abd8-4351a6ac11d9, 2bda83e1-e596-479e-abd8-4351a6ac11d9)" />
+      </list>
+    </option>
+  </component>
+</application>

@@ -11,6 +11,7 @@
       <mapping pattern=".sbtOpt" type="PLAIN_TEXT" />
       <mapping pattern=".jvmopts" type="PLAIN_TEXT" />
       <mapping ext="macaroon" type="PLAIN_TEXT" />
+      <mapping ext="cert" type="PLAIN_TEXT" />
       <mapping ext="3a" type="PLAIN_TEXT" />
       <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />

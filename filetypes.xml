@@ -2,15 +2,15 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="*.conf.example" type="HOCON" />
-      <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
-      <mapping pattern=".sbtOpt" type="PLAIN_TEXT" />
-      <mapping pattern=".sbtopts" type="PLAIN_TEXT" />
-      <mapping pattern="2019-07-18" type="PLAIN_TEXT" />
-      <mapping pattern=".jvmopts" type="PLAIN_TEXT" />
-      <mapping pattern="in" type="PLAIN_TEXT" />
-      <mapping pattern=".toDelete" type="PLAIN_TEXT" />
+      <mapping ext="gradle.kts" type="Kotlin" />
       <mapping pattern="example" type="PLAIN_TEXT" />
+      <mapping pattern="2019-07-18" type="PLAIN_TEXT" />
+      <mapping pattern=".sbtopts" type="PLAIN_TEXT" />
+      <mapping pattern=".toDelete" type="PLAIN_TEXT" />
+      <mapping pattern=".sbtOpt" type="PLAIN_TEXT" />
+      <mapping pattern="in" type="PLAIN_TEXT" />
+      <mapping pattern=".jvmopts" type="PLAIN_TEXT" />
       <mapping ext="cert" type="PLAIN_TEXT" />
       <mapping ext="macaroon" type="PLAIN_TEXT" />
       <mapping ext="3a" type="PLAIN_TEXT" />

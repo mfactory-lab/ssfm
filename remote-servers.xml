@@ -2,9 +2,7 @@
   <component name="RemoteServers">
     <remote-server name="Docker" type="docker">
       <configuration>
-        <option name="apiUrl" value="https://192.168.99.100:2376" />
-        <option name="certificatesPath" value="C:\Users\maksi\.docker\machine\machines\default" />
-        <option name="machine" value="default" />
+        <option name="apiUrl" value="tcp://localhost:2375" />
       </configuration>
     </remote-server>
   </component>

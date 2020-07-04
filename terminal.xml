@@ -1,6 +1,6 @@
 <application>
   <component name="TerminalOptionsProvider">
-    <option name="myShellPath" value="powershell.exe" />
-    <option name="myTabName" value="Powershell" />
+    <option name="myShellPath" value="bash.exe" />
+    <option name="myTabName" value="WSL" />
   </component>
 </application>

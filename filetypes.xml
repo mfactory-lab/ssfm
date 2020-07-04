@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="*.conf.example" type="HOCON" />
+      <mapping pattern="graphql" type="PLAIN_TEXT" />
       <mapping pattern="example" type="PLAIN_TEXT" />
       <mapping pattern="2019-07-18" type="PLAIN_TEXT" />
       <mapping pattern=".sbtopts" type="PLAIN_TEXT" />

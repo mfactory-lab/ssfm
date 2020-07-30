@@ -1,6 +1,5 @@
 <application>
   <component name="TerminalOptionsProvider">
-    <option name="myShellPath" value="bash.exe" />
-    <option name="myTabName" value="WSL" />
+    <option name="myTabName" value="bash" />
   </component>
 </application>

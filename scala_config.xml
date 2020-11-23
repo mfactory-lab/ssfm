@@ -4,6 +4,7 @@
   </component>
   <component name="ScalaApplicationSettings">
     <option name="SPECIFY_RETURN_TYPE_EXPLICITLY" value="ADD" />
+    <option name="SUGGEST_IN_EDITOR_DOC_RENDERING" value="false" />
     <option name="SUGGEST_AUTOBRACE_INSERTION" value="false" />
   </component>
   <component name="TypeAwareHighlightingApplicationState">

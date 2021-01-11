@@ -211,9 +211,8 @@
         <entry key="*.csv">
           <value>
             <plugin>
-              <option name="myPluginId" value="com.intellij.database" />
-              <option name="myPluginName" value="Database Tools and SQL" />
-              <option name="myBundled" value="true" />
+              <option name="myPluginId" value="com.chesterccw.excelreader" />
+              <option name="myPluginName" value="ExcelReader" />
             </plugin>
           </value>
         </entry>
@@ -1753,18 +1752,16 @@
         <entry key="*.xls">
           <value>
             <plugin>
-              <option name="myPluginId" value="com.intellij" />
-              <option name="myPluginName" value="IDEA CORE" />
-              <option name="myBundled" value="true" />
+              <option name="myPluginId" value="com.chesterccw.excelreader" />
+              <option name="myPluginName" value="ExcelReader" />
             </plugin>
           </value>
         </entry>
         <entry key="*.xlsx">
           <value>
             <plugin>
-              <option name="myPluginId" value="com.intellij" />
-              <option name="myPluginName" value="IDEA CORE" />
-              <option name="myBundled" value="true" />
+              <option name="myPluginId" value="com.chesterccw.excelreader" />
+              <option name="myPluginName" value="ExcelReader" />
             </plugin>
           </value>
         </entry>

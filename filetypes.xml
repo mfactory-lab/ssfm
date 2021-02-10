@@ -3,7 +3,6 @@
     <extensionMap>
       <mapping ext="log" type="ANSI Aware" />
       <mapping ext="csv" type="CSV" />
-      <removed_mapping ext="log" approved="true" type="Catdea" />
       <mapping pattern="*.conf.example" type="HOCON" />
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
@@ -22,9 +21,9 @@
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
-      <removed_mapping ext="csv" approved="true" type="CSV/TSV" />
+      <removed_mapping ext="csv" approved="true" type="MyNative" />
       <removed_mapping ext="dockerfile" approved="true" type="textmate" />
-      <removed_mapping ext="log" approved="true" type="Log" />
+      <removed_mapping ext="log" approved="true" type="Catdea" />
       <removed_mapping ext="makefile" approved="true" type="textmate" />
       <removed_mapping ext="psd" approved="true" type="Image" />
       <removed_mapping ext="snakefile" approved="true" type="textmate" />

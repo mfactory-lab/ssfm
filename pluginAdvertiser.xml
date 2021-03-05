@@ -211,8 +211,8 @@
         <entry key="*.csv">
           <value>
             <plugin>
-              <option name="myPluginId" value="com.chesterccw.excelreader" />
-              <option name="myPluginName" value="ExcelReader" />
+              <option name="myPluginId" value="net.seesharpsoft.intellij.plugins.csv" />
+              <option name="myPluginName" value="CSV Plugin" />
             </plugin>
           </value>
         </entry>
@@ -1001,8 +1001,8 @@
         <entry key="*.log">
           <value>
             <plugin>
-              <option name="myPluginId" value="com.intellij.ideolog" />
-              <option name="myPluginName" value="Ideolog" />
+              <option name="myPluginId" value="com.cybrosis.catdea" />
+              <option name="myPluginName" value="Catdea" />
             </plugin>
           </value>
         </entry>

@@ -5,17 +5,16 @@
       <mapping ext="space.kts" type="Kotlin" />
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
-      <mapping pattern=".log" type="Log" />
+      <mapping pattern=".sbtopts" type="PLAIN_TEXT" />
+      <mapping pattern=".jvmopts" type="PLAIN_TEXT" />
       <mapping pattern="2019-07-18" type="PLAIN_TEXT" />
+      <mapping pattern="in" type="PLAIN_TEXT" />
+      <mapping pattern=".sbtOpt" type="PLAIN_TEXT" />
       <mapping pattern=".toDelete" type="PLAIN_TEXT" />
       <mapping pattern="example" type="PLAIN_TEXT" />
-      <mapping pattern=".sbtOpt" type="PLAIN_TEXT" />
-      <mapping pattern=".jvmopts" type="PLAIN_TEXT" />
-      <mapping pattern=".sbtopts" type="PLAIN_TEXT" />
-      <mapping pattern="in" type="PLAIN_TEXT" />
       <mapping pattern="graphql" type="PLAIN_TEXT" />
-      <mapping ext="3a" type="PLAIN_TEXT" />
       <mapping ext="macaroon" type="PLAIN_TEXT" />
+      <mapping ext="3a" type="PLAIN_TEXT" />
       <mapping ext="cert" type="PLAIN_TEXT" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
@@ -31,6 +30,7 @@
       <removed_mapping ext="xls" approved="true" type="Native" />
       <removed_mapping ext="xlsx" approved="true" type="Native" />
       <removed_mapping pattern=".env" approved="true" type="Env File" />
+      <removed_mapping pattern=".log" approved="true" type="Catdea" />
     </extensionMap>
   </component>
 </application>
